@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { Mail, MapPin, Phone, Send, Clock } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, Clock, Hash } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [submitted, setSubmitted] = React.useState(false);
@@ -39,6 +39,26 @@ const Contact: React.FC = () => {
                     <a href="mailto:rd25abb@herts.ac.uk" className="text-slate-900 font-bold hover:text-blue-600 transition-colors underline decoration-blue-200">rd25abb@herts.ac.uk</a>
                   </div>
                 </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-slate-400 uppercase mb-1">Phone</p>
+                    <a href="tel:07340091231" className="text-slate-900 font-bold hover:text-blue-600 transition-colors">07340091231</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Hash className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-slate-400 uppercase mb-1">Registration Number</p>
+                    <p className="text-slate-900 font-bold">24173349</p>
+                  </div>
+                </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Clock className="w-5 h-5" />
@@ -52,17 +72,17 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="p-8 bg-[#0a192f] rounded-3xl text-white">
-               <h4 className="font-bold mb-4">Consultant Integrity</h4>
-               <p className="text-sm text-slate-400 leading-relaxed">
-                 All enquiries are handled with strict confidentiality in line with our ethical core and UH research protocols.
-               </p>
+              <h4 className="font-bold mb-4">Consultant Integrity</h4>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                All enquiries are handled with strict confidentiality in line with our ethical core and UH research protocols.
+              </p>
             </div>
           </div>
 
           <div className="lg:col-span-8">
             <div className="bg-white p-12 rounded-[40px] border border-slate-100 shadow-sm">
               <h3 className="text-2xl font-bold text-slate-900 mb-10">Enquiry Form</h3>
-              
+
               {submitted ? (
                 <div className="py-20 text-center space-y-4">
                   <div className="w-20 h-20 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
